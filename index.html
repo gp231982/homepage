@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strona o mnie</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/880a9e5170.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--first">
+            Grzegorz Piejko
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#O-mnie">O mnie</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#hobby">Moje hobby</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#favouriteGames">Moje ulubione gry</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="header__firstHeader">Witam na mojej stronie</h1>
+      <img
+        class="header__image"
+        src="/imgs/IMG_20220711_204359.jpg"
+        alt="Nad morzem"
+      />
+    </header>
+    <main class="main">
+      <section class="section" id="O-mnie">
+        <h2 class="section__secondHeader">Parę słów o mnie</h2>
+        <p class="section__paragraph">
+          Cześć, mam na imię Grzegorz. Prywatnie mąż i ojciec dwójki
+          rozrabiaków, z wykształcenia i zawodu inżynier od lat związany z
+          branżą automotive. W wyniku przemyśleń różnorakich oraz tradycji
+          programistycznych w rodzinie postanowiłem spróbować czegoś całkiem
+          nowego tj.
+          <strong class="section__strong"
+            >nauczyć się tworzyć interaktywne strony internetowe</strong
+          >
+          na początek. Bardzo podoba mi się idea
+          <i class="section__italic">"Workation na Bali :)"</i> oraz innych profitów
+          dotyczących zawodu programisty, stąd postanowiłem podjąć to wyzwanie
+          razem z Wami i jak do tej pory forma przekazywanej wiedzy bardzo mi
+          odpowiada. Mam nadzieję, że ta <b class="section__bold">podroż</b>, w
+          którą chce wyruszyć szybko się nie skończy...i tym razem nie zabraknie
+          mi zaangażowania i entuzjazmu. Wiem, że jeśli mi się uda, będzie to
+          idealny <em class="section__emphasize">prezent na Nowy Rok</em>.
+        </p>
+      </section>
+      <section class="section" id="hobby">
+        <h2 class="section__secondHeader">Moje hobby</h2>
+        <ul class="section__hobby">
+          <li class="section__listItem">
+            Uwielbiam jeździć co roku nad polskie morze. Kocham Bałtyk pomimo
+            wiatru, zimna i paragonów grozy.
+          </li>
+          <li class="section__listItem">
+            Gry planszowe (najlepiej z negatywną interakcją) to pasja moich
+            ostatnich kilku lat. Mam nadzieję, że znajdę na nie więcej czasu bo
+            niestety badziej je ostatnio kolekcjonuje niż w nie gram.
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="favouriteGames">
+        <h2 class="section__secondHeader">Moje ulubione gry planszowe</h2>
+        <table class="table">
+          <caption class="table__caption">
+            5 ulubionych gier area-control (kliknij, żeby zmienić pozycję)
+          </caption>
+          <tr>
+            <th class="table__tableCell table__tableHeader" scope="col">
+              Tytuł
+            </th>
+            <th class="table__tableCell table__tableHeader" scope="col">
+              Autor
+            </th>
+            <th class="table__tableCell table__tableHeader" scope="col">
+              Liczba graczy
+            </th>
+            <th class="table__tableCell table__tableHeader" scope="col">
+              Czas rozgrywki
+            </th>
+            <th class="table__tableCell table__tableHeader" scope="col">
+              Wiek
+            </th>
+            <th class="table__tableCell table__tableHeader" scope="col">
+              Miejsce w rankingu BGG
+            </th>
+          </tr>
+          <tr>
+            <th class="table__tableCell table__tableHeader" scope="row">
+              <a
+                class="section__tableLink"
+                href="https://boardgamegeek.com/boardgame/43111/chaos-old-world"
+                target="blank"
+                >Chaos w starym świecie</a
+              >
+            </th>
+            <td class="table__tableCell">Eric M.Lang</td>
+            <td class="table__tableCell">3-4</td>
+            <td class="table__tableCell">60-120 Min.</td>
+            <td class="table__tableCell">13+</td>
+            <td class="table__tableCell">155</td>
+          </tr>
+          <tr>
+            <th class="table__tableCell table__tableHeader" scope="row">
+              <a
+                href="https://boardgamegeek.com/boardgame/20551/shogun"
+                class="section__tableLink"
+                target="blank"
+                >Shogun</a
+              >
+            </th>
+            <td class="table__tableCell">Dirk Henn</td>
+            <td class="table__tableCell">3-5</td>
+            <td class="table__tableCell">90-120 Min.</td>
+            <td class="table__tableCell">12+</td>
+            <td class="table__tableCell">239</td>
+          </tr>
+          <tr>
+            <th class="table__tableCell table__tableHeader" scope="row">
+              <a
+                href="https://boardgamegeek.com/boardgame/54998/cyclades"
+                class="section__tableLink"
+                target="blank"
+                >Cyklady</a
+              >
+            </th>
+            <td class="table__tableCell">Bruno Cathala & Ludvik Maublank</td>
+            <td class="table__tableCell" rowspan="2">2-5</td>
+            <td class="table__tableCell">60-90 Min.</td>
+            <td class="table__tableCell" rowspan="2">13+</td>
+            <td class="table__tableCell">208</td>
+          </tr>
+          <tr>
+            <th class="table__tableCell table__tableHeader" scope="row">
+              <a
+                href="https://boardgamegeek.com/boardgame/127023/kemet"
+                class="section__tableLink"
+                target="blank"
+                >Kemet</a
+              >
+            </th>
+            <td class="table__tableCell">
+              Jacques Bariot & Guillaume Montiage
+            </td>
+
+            <td class="table__tableCell">90-120 Min.</td>
+
+            <td class="table__tableCell">130</td>
+          </tr>
+          <tr>
+            <th class="table__tableCell table__tableHeader" scope="row">
+              <a
+                href="https://boardgamegeek.com/boardgame/299659/clash-cultures-monumental-edition"
+                class="section__tableLink"
+                target="blank"
+                >Clash of Cultures: Monumental Edition</a
+              >
+            </th>
+            <td class="table__tableCell">Christian Marcussen</td>
+            <td class="table__tableCell">2-4</td>
+            <td class="table__tableCell">180-240 Min.</td>
+            <td class="table__tableCell">14+</td>
+            <td class="table__tableCell">348</td>
+          </tr>
+        </table>
+      </section>
+      <button class="main__button">Powrót</button>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer__unorderedList">
+        <li class="footer_listItem footer__listItem--firstItem">
+          Więcej o mnie:
+        </li>
+        <li class="footer_listItem">
+          <a class="footer__link" href="">Moje podróże</a>
+        </li>
+        <li class="footer_listItem">
+          <a class="footer__link" href="">Moje ksiązki</a>
+        </li>
+        <li class="footer_listItem">
+          <a class="footer__link" href="">Moje filmy</a>
+        </li>
+        <li class="footer_listItem">
+          <a class="footer__link" href="">Ciekawe linki</a>
+        </li>
+        <li class="footer__listItem footer__listItem--lastItem">
+          Napisz do mnie >>
+        </li>
+      </ul>
+      <form class="form">
+        <label class="form__label" for="input">Twój e-mail</label>
+        <input id="input" class="form__input" type="email" />
+        <label class="form__label" for="textarea">Wiadomość</label>
+        <textarea
+          class="form__textarea"
+          name="text_area"
+          id="textarea"
+          cols="60"
+          rows="10"
+        ></textarea>
+      </form>
+      <div class="footer__socialLinks">
+        <div class="footer__socials">
+          <h3 id="facebook">
+            <a class="footer__socialLink" href="">Facebook</a>
+          </h3>
+          <i id="facebook_icon" class="footer__icon fa-brands fa-facebook"></i>
+        </div>
+        <div class="footer__socials">
+          <h3 id="twitter">
+            <a class="footer__socialLink" href="">Twitter</a>
+          </h3>
+          <i id="twitter_icon" class="footer__icon fa-brands fa-twitter"></i>
+        </div>
+
+        <div class="footer__socials">
+          <h3 id="instagram">
+            <a class="footer__socialLink" href="">Instagram</a>
+          </h3>
+          <i
+            id="instagram_icon"
+            class="footer__icon fa-brands fa-square-instagram"
+          ></i>
+        </div>
+        <div class="footer__socials">
+          <h3 id="youtube">
+            <a class="footer__socialLink" href="">Youtube</a>
+          </h3>
+          <i id="youtube_icon" class="footer__icon fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
