@@ -1,63 +1,94 @@
-console.log(
-  "Cześć !, przesyłam pracę z modułu czwartego i proszę o uwagi i wskazówki :) "
-);
+{
+  const button = document.querySelector(".main__button");
+  const caption = document.querySelector(".table__caption");
+  const facebook_icon = document.querySelector("#facebook_icon");
+  const twitter_icon = document.querySelector("#twitter_icon");
+  const instagram_icon = document.querySelector("#instagram_icon");
+  const youtube_icon = document.querySelector("#youtube_icon");
 
-let button = document.querySelector(".main__button");
-let caption = document.querySelector(".section__caption");
-let li_facebook = document.querySelector("#facebook");
-let li_twitter = document.querySelector("#twitter");
-let li_instagram = document.querySelector("#instagram");
-let li_youtube = document.querySelector("#youtube");
-let facebook_icon = document.querySelector("#facebook_icon");
-let twitter_icon = document.querySelector("#twitter_icon");
-let instagram_icon = document.querySelector("#instagram_icon");
-let youtube_icon = document.querySelector("#youtube_icon");
+  const welcome = () => {
+    console.log("Cześć !, Witam wszystkich bardzo serdecznie :) ");
+  };
 
-button.addEventListener("click", () => {
-  window.scrollTo(0, 0);
-});
+  scrollPage = () => {
+    window.scrollTo(0, 0);
+  };
 
-caption.addEventListener("click", () => {
-  caption.style.captionSide === "bottom"
-    ? (caption.style.captionSide = "top")
-    : (caption.style.captionSide = "bottom");
-});
+  const changeCaptionSide = () => {
+    caption.style.captionSide === "bottom"
+      ? (caption.style.captionSide = "top")
+      : (caption.style.captionSide = "bottom");
+  };
 
-li_facebook.addEventListener("mouseover", (e) => {
-  facebook_icon.style.opacity = "100%";
-});
+  const facebookIconOpacityMouseoverChange = () => {
+    facebook_icon.style.opacity = "100%";
+  };
 
-li_facebook.addEventListener("mouseout", () => {
-  facebook_icon.style.opacity = "30%";
-  
-});
+  const facebookIconOpacityMousoutChange = () => {
+    facebook_icon.style.opacity = "30%";
+  };
 
-li_twitter.addEventListener("mouseover", (e) => {
-  twitter_icon.style.opacity = "100%";
-  
-});
+  const twitterIconOpacityMouseoverChange = () => {
+    twitter_icon.style.opacity = "100%";
+  };
 
-li_twitter.addEventListener("mouseout", () => {
-  twitter_icon.style.opacity = "30%";
-  
-});
+  const twitterIconOpacityMousoutChange = () => {
+    twitter_icon.style.opacity = "30%";
+  };
 
-li_instagram.addEventListener("mouseover", (e) => {
-  instagram_icon.style.opacity = "100%";
-  
-});
+  const instagramIconOpacityMouseoverChange = () => {
+    instagram_icon.style.opacity = "100%";
+  };
 
-li_instagram.addEventListener("mouseout", () => {
-  instagram_icon.style.opacity = "30%";
-  
-});
+  const instagramIconOpacityMouseoutChange = () => {
+    instagram_icon.style.opacity = "30%";
+  };
 
-li_youtube.addEventListener("mouseover", (e) => {
-  youtube_icon.style.opacity = "100%";
-  
-});
+  const youtubeIconOpacityMouseoverChange = () => {
+    youtube_icon.style.opacity = "100%";
+  };
 
-li_youtube.addEventListener("mouseout", () => {
-  youtube_icon.style.opacity = "30%";
-  
-});
+  const youtubeIconOpacityMouseoutChange = () => {
+    youtube_icon.style.opacity = "30%";
+  };
+
+  const init = () => {
+    const li_facebook = document.querySelector("#facebook");
+    const li_twitter = document.querySelector("#twitter");
+    const li_instagram = document.querySelector("#instagram");
+    const li_youtube = document.querySelector("#youtube");
+
+    welcome();
+
+    button.addEventListener("click", scrollPage);
+
+    caption.addEventListener("click", changeCaptionSide);
+
+    li_facebook.addEventListener(
+      "mouseover",
+      facebookIconOpacityMouseoverChange
+    );
+
+    li_facebook.addEventListener("mouseout", facebookIconOpacityMousoutChange);
+
+    li_twitter.addEventListener("mouseover", twitterIconOpacityMouseoverChange);
+
+    li_twitter.addEventListener("mouseout", twitterIconOpacityMousoutChange);
+
+    li_instagram.addEventListener(
+      "mouseover",
+      instagramIconOpacityMouseoverChange
+    );
+
+    li_instagram.addEventListener(
+      "mouseout",
+      instagramIconOpacityMouseoutChange
+    );
+
+    li_youtube.addEventListener("mouseover", youtubeIconOpacityMouseoverChange);
+
+    li_youtube.addEventListener("mouseout", youtubeIconOpacityMouseoutChange);
+  };
+
+  init();
+}
